@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="dist/css/style.css">
     	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+    <link rel="shortcut icon" " href="dist/images/favicon.ico">
 </head>
 <body class="is-boxed has-animations">
     <div class="body-wrap boxed-container">
@@ -28,15 +29,15 @@
 
         <main>
             <section class="hero">
-				<div class="hero-left-decoration is-revealing"></div>
+				<div class="hero-left-decoration is-revealing" id="aboutus"></div>
 				<div class="hero-right-decoration is-revealing"></div>
                 <div class="container">
                     <div class="hero-inner">
 						<div class="hero-copy">
-	                        <h1 class="hero-title mt-0 is-revealing">Landing template for startups</h1>
+	                        <h1 class="hero-title mt-0 is-revealing">Learning English could be interesting</h1>
 	                        <p class="hero-paragraph is-revealing">Our landing page template works on all devices, so you only have to set it up once, and get beautiful results forever.</p>
 	                        <p class="hero-cta mb-0 is-revealing">
-								<a class="button button-primary button-shadow" href="#">Get started free</a>
+								<a class="button button-primary button-shadow" href="#">Join us</a>
 							</p>
 						</div>
 						<div class="hero-illustration">
@@ -50,9 +51,7 @@
                     <div class="features-inner section-inner has-top-divider">
 						<div class="features-header text-center">
 							<div class="container-sm">
-								<h2 class="section-title mt-0">Meet Blue</h2>
-								<p class="section-paragraph mb-0">Lorem ipsum is common placeholder text used to demonstrate the graphic elements of a document or visual presentation.</p>
-							</div>
+								<h2 class="section-title mt-0">Main benefits to study in LOTOS</h2>
 						</div>
                         <div class="features-wrap">
                             <div class="feature is-revealing">
@@ -114,54 +113,9 @@
                 </div>
             </section>
 
-			<section class="features-tabs section">
-                <div class="container">
-                    <div class="features-tabs-inner section-inner has-top-divider">
-						<div class="tabs-container">
-							<ul class="tabs-links">
-								<li class="is-revealing">
-									<a href="#tab-1" class="tab-link is-active">
-										<img src="dist/images/tabs-icon-01.svg" alt="Tabs icon 01">
-										<span class="h4 m-0">Amazing features</span>
-									</a>
-								</li>
-								<li class="is-revealing">
-									<a href="#tab-2" class="tab-link">
-										<img src="dist/images/tabs-icon-02.svg" alt="Tabs icon 02">
-										<span class="h4 m-0">Endless possibilities</span>
-									</a>
-								</li>
-								<li class="is-revealing">
-									<a href="#tab-3" class="tab-link">
-										<img src="dist/images/tabs-icon-03.svg" alt="Tabs icon 03">
-										<span class="h4 m-0">Ease of use</span>
-									</a>
-								</li>
-							</ul>
-							<div class="tabs-content">
-								<div id="tab-1" class="tab-panel is-active">
-									<h2>Discover</h2>
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-									<p class="mb-0">A arcu cursus vitae congue. Vel elit scelerisque mauris pellentesque pulvinar pellentesque habitant morbi tristique.</p>
-								</div>
-								<div id="tab-2" class="tab-panel">
-									<h2>Power of customisation</h2>
-									<p>A arcu cursus vitae congue. Vel elit scelerisque mauris pellentesque pulvinar pellentesque habitant morbi tristique.</p>
-									<p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. A arcu cursus vitae congue.</p>
-								</div>
-								<div id="tab-3" class="tab-panel">
-									<h2>Keep it simple</h2>
-									<p>Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
-									<p class="mb-0">Nemo enim ipsam voluptatem, quia voluptas sit, aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos, qui ratione voluptatem sequi nesciunt.</p>
-								</div>
-							</div>
-						</div>
-                    </div>
-                </div>
-            </section>
-
+	
 			<section class="testimonials section">
-				<div class="container">
+				<div class="container" id="feedback">
 					<div class="testimonials-inner section-inner">
 						<div class="testimonials-header text-center text-light">
 							<h2 class="section-title mt-0">Our students opinion</h2>
@@ -245,7 +199,7 @@
 			</section>
 
             <section class="pricing section">
-                <div class="container">
+                <div class="container"  id="price">
                     <div class="pricing-inner section-inner">
                         <h2 class="section-title mt-0 text-center">Pricing</h2>
 						<div>
@@ -306,7 +260,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="pricing-faqs container-sm is-revealing">
+						<div class="pricing-faqs container-sm is-revealing" id="faq">
 							<h4 class="mt-40 mb-32" id="questions">FAQs</h4>
 	                        <ul class="accordion">
 	                            <li>
@@ -361,17 +315,17 @@
                         </a>
                     </div>
                     <ul class="footer-links list-reset">
-                        <li>
-                            <a href="#">Contact</a>
+                    	 <li>
+                            <a href="#aboutus">About us</a>
+                        </li>
+                          <li>
+                            <a href="#feedback">Feedback</a>
                         </li>
                         <li>
-                            <a href="pricing-table-cta">About us</a>
+                            <a href="#price">Prices</a>
                         </li>
                         <li>
-                            <a id="FAQ">FAQ's</a>
-                        </li>
-                        <li>
-                            <a href="#">Support</a>
+                            <a href="#faq">FAQ's</a>
                         </li>
                     </ul>
                     <ul class="footer-social-links list-reset">
@@ -389,5 +343,7 @@
         </footer>
     </div>
     <script src="dist/js/main.min.js"></script>
+    <script src="dist/js/jquery-3.4.1.min.js"></script>
+    <script src="dist/js/anchor.js"></script>
 </body>
-</htmlo
+</html>
