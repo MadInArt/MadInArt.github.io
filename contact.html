@@ -4,13 +4,12 @@
 	<title>Contact me | MadInArt</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<!-- Favicon -->   
-<link rel="shortcut icon" type="image/png" href="favicon.png">
+	<link rel="shortcut icon" type="image/png" href="favicon.png">
 
 	<!-- Google Fonts -->
 	<link href="https://fonts.googleapis.com/css?family=Josefin+Sans:400,400i,600,600i,700" rel="stylesheet">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 
 	<!-- Stylesheets -->
 	<link rel="stylesheet" href="bootstrap.min.css"/>
@@ -61,17 +60,22 @@
 				</div>
 			</div>
 		</div>
-<form class="contact-form " action="https://gmail.us20.list-manage.com/subscribe/post?u=f0da6315746aeacada071a193&amp;id=6b02df9470" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+	<form class="contact-form">
+
+		<input type="hidden" name="project_name" value="MadInArt">
+		<input type="hidden" name="admin_email" value="shshsh3228@gmail.com">
+		<input type="hidden" name="form_subject" value="MadInArt ORDER">
+
 				<div class="row">
 					<div class="col-md-6 " >
-						<input type="text" placeholder="Name" name="NAME"  id="mce-NAME" class="form">
+						<input type="text" placeholder="Name" name="Name" class="form">
 					</div>
 					<div class="col-md-6 required">
-						<input type="text" placeholder="E-mail"  id="mce-EMAIL" name="EMAIL"  class="form">
+						<input type="text" placeholder="E-mail" name="Email"  class="form">
 					</div>
 					<div class="col-md-12">
 						<div class="mc-field-group">
-								<select name="GENRE" class="required form" id="mce-GENRE"  >
+								<select name="Genre" class="required form">
 									 <option value="" disabled selected >Choose necessary genre</option>
 									<option value="Digital portraits">Digital portraits</option>
 									<option value="Cartoon characters">Cartoon characters</option>
@@ -83,14 +87,15 @@
 						</div>
 					</div>
 					<div class="col-md-12">
-						<input type="text" name="MMERGE2" id="mce-MMERGE2" placeholder="Additional comments"  class="form">
+						<input type="text" name="Additional_comments" placeholder="Additional comments" class="form">
 					</div>
 				
-			</div>
-			</form>
-			<div class="text-center">
-					<button class="site-btn"value="Subscribe" name="subscribe" id="mc-embedded-subscribe">Send</button>
 				</div>
+				<div class="text-center">
+					<button class="site-btn">Send</button>
+				</div>
+			</form>
+			
 
 <!--End mc_embed_signup-->
 	</section>
@@ -104,9 +109,6 @@
                         <li class="facebook"><i class="fab fa-facebook-f"></i></li>
                     </a><a target="_blank" rel="noopener noreferrer" href=https://www.linkedin.com/in/madina-murzakhmetova-a72612182/  class="lin">
                     <li class="linkedin"><i class="fab fa-linkedin-in"></i></li>
-                    </a>
-                    <a target="_blank" rel="noopener noreferrer" href="mailto:m8mur@mail.ru?subject=Order"  class="gm">
-                        <li class="gmail"><i class="fas fa-inbox"></i></li>
                     </a>
                     <a href="tel://+48780018380"  class="lin">
                     <li class="phone"><i class="fas fa-phone"></i> </li>
@@ -124,11 +126,13 @@
       <a id="button"></a>
 	<!-- footer section end -->
 	<!--====== Javascripts & Jquery ======-->
-	<script src="jquery-2.1.4.min.js"></script>
+	<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+	<script src="script.js"></script>	
 	<script src="bootstrap.min.js"></script>
 	<script src="mixitup.min.js"></script>
 	<script src="magnific-popup.min.js"></script>
 	<script src="main.js"></script>
 	<script src="toTop.js"></script>
+	
 </body>
 </html>
